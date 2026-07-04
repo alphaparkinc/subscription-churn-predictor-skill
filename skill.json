@@ -1,0 +1,52 @@
+{
+  "name": "subscription-churn-predictor-skill",
+  "version": "1.0.0",
+  "description": "Predict subscription churn risk for e-commerce subscription customers using engagement and billing signals, and generate targeted retention offers.",
+  "author": "alphaparkinc",
+  "category": "retention",
+  "tags": [
+    "churn",
+    "subscription",
+    "retention",
+    "prediction",
+    "e-commerce"
+  ],
+  "inputs": {
+    "subscriber": {
+      "type": "object",
+      "description": "Subscriber data: subscription_months, last_login_days, orders_last_90d, support_tickets, failed_payments, plan_tier."
+    },
+    "engagement": {
+      "type": "object",
+      "description": "Engagement signals: email_open_rate, portal_logins_last_30d, skipped_months, product_reviews_given."
+    },
+    "billing": {
+      "type": "object",
+      "description": "Billing signals: failed_payments_last_3m, plan_downgrades, avg_monthly_spend."
+    }
+  },
+  "outputs": {
+    "churn_risk_score": {
+      "type": "number",
+      "description": "Churn risk score 0-100."
+    },
+    "churn_probability": {
+      "type": "number",
+      "description": "Estimated churn probability (0-1)."
+    },
+    "risk_tier": {
+      "type": "string",
+      "description": "Imminent / High / Medium / Low."
+    },
+    "churn_drivers": {
+      "type": "array",
+      "description": "Key factors driving churn risk."
+    },
+    "retention_offers": {
+      "type": "array",
+      "description": "Personalized offers to retain the subscriber."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
