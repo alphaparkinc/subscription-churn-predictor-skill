@@ -1,8 +1,8 @@
 {
   "name": "subscription-churn-predictor-skill",
   "version": "1.0.0",
-  "description": "Predict subscription churn risk for e-commerce subscription customers using engagement and billing signals, and generate targeted retention offers.",
-  "author": "alphaparkinc",
+  "description": "GenPark AI Agent Skill - Predict subscription churn risk for e-commerce subscription customers using engagement and billing signals, and generate targeted retention offers.",
+  "author": "genpark",
   "category": "retention",
   "tags": [
     "churn",
