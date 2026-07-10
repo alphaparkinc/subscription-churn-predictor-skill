@@ -1,4 +1,4 @@
-# subscription-churn-predictor-skill
+# genpark-subscription-churn-predictor-skill
 
 > **GenPark AI Agent Skill** -- Predict subscription churn risk and generate targeted retention offers using engagement and billing signals.
 
